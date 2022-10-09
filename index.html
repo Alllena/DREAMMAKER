@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,700" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=PT+Serif:regular" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Rubik:300,regular,700" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Rammetto+One:regular" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display:regular" rel="stylesheet" />
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
    <title>Document</title>
 </head>
+
 <body>
-   
+   <header class="header">
+      <div class="hidden-menu">
+         <div class="hidden-menu__burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+         <nav class="hidden-menu__dropdown">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="">About us</a></li>
+               <li><a href="">Service</a></li>
+               <li><a href="">Setting</a></li>
+               <li><a href="">Contact</a></li>
+            </ul>
+         </nav>
+      </div>
+      <div class="header__nav">
+         <div class="wrapper">
+            <div class="nav__logo">
+               <div class="logo__logo">dw</div>
+               <div class="logo__name">Dreammaker</div>
+            </div>
+            <!-- <nav class="nav__menu">
+               <ul>
+                  <li><a class="button" href="#">Home</a></li>
+                  <li><a class="button" href="#">About us</a></li>
+                  <li><a class="button" href="#">Service</a></li>
+                  <li><a class="button" href="#">Setting</a></li>
+                  <li><a class="button" href="#">Contact us</a></li>
+               </ul>
+            </nav> -->
+         </div>
+      </div>
+      <div class="header__info">
+         <div class="wrapper"></div>
+
+      </div>
+
+   </header>
 </body>
+
+<script>
+   let burger = document.querySelector(".hidden-menu__burger");
+   burger.addEventListener("click", function () {
+      this.classList.toggle("active");
+   })
+</script>
+
 </html>
