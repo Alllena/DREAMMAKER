@@ -11,3 +11,28 @@
 /* *HEADER */
 
 /* *End HEADER */
+/* *SERVICE */
+
+/* *End SERVICE */
+
+@media (max-width: 1024px) {
+/* *FOR ALL */
+
+   /* *End FOR ALL */
+   /* *FONT */
+
+   /* *End FONT */
+   /* *BUTTON */
+
+   /* *End BUTTON */
+   /* *HEADER */
+
+   .nav__menu {
+      display: none;
+   }
+
+.hidden-menu {
+   display: block;
+}
+   /* *End HEADER */
+}
