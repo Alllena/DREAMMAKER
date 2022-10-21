@@ -53,10 +53,29 @@ body {
 
 /* *End FOR ALL */
 /* *FONT */
+li a {
+   color: #717784;
+ font-weight: 600;
+}
+
+.logo {
+   font-family: 'Rammetto One', sans-serif;
+   font-size: 20px;
+   color: #FFFFFF;
+   text-transform: uppercase;
+   text-align: center;
+   line-height: 72px;
+   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
 .logo__name {
    font-family: "Roboto", sans-serif;
    font-size: 1.38em;
-   color: #505050;
+   color: #FFFFFF;
+}
+
+.nav__logo .logo__name {
+   font-weight: 600;
 }
 
 .heading {
@@ -86,9 +105,30 @@ body {
    margin-bottom: 30px;
 }
 
+.navbar__item h3,
+.navbar__item a {
+   color: #FFFFFF;
+}
+
+.navbar__item h3 {
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
+.navbar__item a {
+   font-size: 16px;
+}
+
+.footer__body p {
+   color: #FFFFFF;
+}
+
 /* *End FONT */
 /* *BUTTON */
 .button {
+   color: #717784;
+   font-family: "Poppins", sans-serif;
+   font-size: 18px;
    display: flex;
    width: 234px;
    height: 60px;
@@ -97,18 +137,18 @@ body {
    align-items: center;
    transition: 1.2s ease-in-out;
    cursor: pointer;
+   background-color: rgba(217, 217, 217, 1);
+   box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2);
 }
 
-li .button {
-   width: max-content;
-   padding: 0 20px;
-}
+
 
 .button:hover {
    background: #9B9BCA;
    color: #FFFFFF;
    font-weight: 600;
 }
+
 
 .questions .button {
    text-transform: uppercase;
@@ -122,6 +162,14 @@ li .button {
    left: 50%;
    top: 100%;
    transform: translate(-50%, -50%);
+}
+
+form .button {
+   text-transform: uppercase;
+}
+
+.button__provider {
+   background-color: rgba(236, 221, 224, 1);
 }
 
 /* *End BUTTON */
@@ -143,7 +191,6 @@ li .button {
    box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2);
    position: relative;
    z-index: 1;
-   /* overflow: hidden; */
    background: inherit;
    background-position: top;
 }
@@ -177,25 +224,94 @@ li .button {
    align-items: center;
 }
 
-.logo__logo {
+.logo__box {
    height: 72px;
    width: 72px;
    border-radius: 50%;
    background-color: #C8C8C8;
-   font-family: 'Rammetto One', sans-serif;
-   font-size: 20px;
-   color: #FFFFFF;
-   text-transform: uppercase;
-   text-align: center;
-   line-height: 72px;
-   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+
 }
 
 .nav__menu ul {
    width: 100%;
    display: flex;
    justify-content: space-between;
+   gap: 5px;
 }
+
+.nav__menu li a {
+   position: relative;
+   overflow: hidden;
+}
+
+li .button:hover {
+   box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2);
+}
+
+.nav__menu li a span {
+   display: block;
+   width: 100%;
+   height: 100%;
+   transform: translateX(-101%);
+   transition: 0.2s;
+   background-color: rgba(217, 217, 217, 1);
+   position: absolute;
+   z-index: -1;
+}
+
+.nav__menu ul:hover li:nth-child(1) span {
+   transition-delay: 0.1s;
+}
+
+.nav__menu ul:hover li:nth-child(2) span {
+   transition-delay: 0.2s;
+}
+
+.nav__menu ul:hover li:nth-child(3) span {
+   transition-delay: 0.3s;
+}
+
+.nav__menu ul:hover li:nth-child(4) span {
+   transition-delay: 0.4s;
+}
+
+.nav__menu ul:hover li:nth-child(5) span {
+   transition-delay: 0.5s;
+}
+
+.nav__menu ul:hover span {
+   transform: translateX(0);
+   transition-timing-function: ease-in;
+}
+
+.nav__menu li:nth-child(1) span {
+   transition-delay: 0.5s;
+}
+
+.nav__menu li:nth-child(2) span {
+   transition-delay: 0.4s;
+}
+
+.nav__menu li:nth-child(3) span {
+   transition-delay: 0.3s;
+}
+
+.nav__menu li:nth-child(4) span {
+   transition-delay: 0.2s;
+}
+
+.nav__menu li:nth-child(5) span {
+   transition-delay: 0.1s;
+}
+
+
+li .button {
+   width: max-content;
+   padding: 0 20px;
+   background-color: transparent;
+   box-shadow: none;
+}
+
 
 /* ----------- */
 .hidden-menu {
@@ -268,14 +384,12 @@ li .button {
 .hidden-menu__dropdown {
    height: 100%;
    min-width: 200px;
-   width: 30vw;
+   width: 50vw;
    padding-top: 200px;
-   box-shadow: 0 0 1rem 0 rgba(41, 39, 39, 0.2);
+   box-shadow: 0 10px 5px -5px rgba(30, 129, 204, 0.2);
    position: relative;
    z-index: 1;
-   /* overflow: hidden; */
-   background: inherit;
-   background-position: top;
+   background-color: rgba(226, 226, 226, 1);
    left: -100%;
    top: -100%;
    transition: 1.5s ease;
@@ -284,15 +398,8 @@ li .button {
 .hidden-menu__dropdown::before {
    content: "";
    position: absolute;
-   background: inherit;
-   z-index: -1;
    top: 0;
    left: 0;
-   right: 0;
-   bottom: 0;
-   box-shadow: inset 0 0 2000px rgba(241, 241, 241, 0.3);
-   filter: blur(3px);
-   margin: 5px;
 }
 
 .hidden-menu__burger.active+.hidden-menu__dropdown {
@@ -380,9 +487,16 @@ li .button {
 }
 
 .experts__container {
-   width: 480px;
-   height: 480px;
+   width: 680px;
+   height: 500px;
    position: relative;
+   background: url(../img/img_experts/VectorA.png) -20% 60%,
+      url(../img/img_experts/Vector1.png) 30% 40%,
+      url(../img/img_experts/Vector2.png) 55% 20%,
+      url(../img/img_experts/Vector3.png) 70% 40%,
+      url(../img/img_experts/Vector4.png) 80% 65%,
+      url(../img/img_experts/Vector5.png) 40% 85%;
+   background-repeat: no-repeat;
 }
 
 .experts__support {
@@ -419,9 +533,13 @@ li .button {
 .expert__item_3::before {
    width: 97px;
    height: 97px;
+   border-radius: 50%;
    content: "";
    position: absolute;
    background-repeat: no-repeat;
+   border: 3px solid rgba(217, 217, 217, 1);
+   box-shadow: 10px 10px 10px 0px rgba(30, 129, 204, 0.2);
+   background-position: center;
 }
 
 .expert__item_1::after,
@@ -433,19 +551,15 @@ li .button {
 }
 
 .expert__item_1::before,
-.expert__item_2::before,
 .expert__item_3::before {
    left: 50%;
    bottom: 0;
    transform: translateX(-50%);
 }
 
-.expert__item_1 {
-   /* border-top: 2px dotted #505050 ;
-   border-left: 2px dotted #822323;
-   border-right: inherit;
-   border-bottom: inherit; */
-
+.expert__item_2::before {
+   left: 30%;
+   bottom: -25%;
 }
 
 .expert__item_1::after {
@@ -463,7 +577,6 @@ li .button {
 .expert__item_2::after {
    background-image: url(../img/img_experts/expert3.png);
    transform: translateX(-35px) rotate(-60deg);
-
 }
 
 .expert__item_2::before {
@@ -489,6 +602,12 @@ li .button {
 
 /* *End Experts */
 /* *DEMO */
+
+.demo__video {
+   width: 100%;
+   max-height: 780px;
+   object-fit: cover;
+}
 
 /* *End DEMO */
 /* *QUESTIONS */
@@ -602,7 +721,7 @@ summary:focus {
    height: 1640px;
    /* !удалить высоту*/
    background: url(../img/img_partners/fon.png) 0 100%,
-    radial-gradient(57.2em 57.2em at 0 50%, rgba(255, 237, 239, 1) 49%, transparent -50%),
+      radial-gradient(57.2em 57.2em at 0 50%, rgba(255, 237, 239, 1) 49%, transparent -50%),
       radial-gradient(4.9em 4.9em at 50% 50%, rgba(255, 237, 239, 1) 49%, transparent -50%),
       radial-gradient(4.9em 4.9em at 50% 90%, rgba(255, 237, 239, 1) 49%, transparent -50%),
       radial-gradient(2.7em 2.7em at 43% 60%, rgba(255, 237, 239, 1) 49%, transparent -50%),
@@ -690,6 +809,7 @@ span {
 }
 
 /* *End PARTNERS */
+/* *CONTACT */
 .contact__form {
    width: 708px;
    height: 566px;
@@ -746,3 +866,78 @@ span {
    font-size: 18px;
    color: #626780;
 }
+
+/* *End CONTACT */
+/* *FOOTER */
+.footer {
+   background: radial-gradient(135em 135em at 50% 245%, rgba(155, 155, 202, 1) 49%, transparent -50%);
+}
+
+footer.section {
+   padding: 110px 0 20px;
+}
+
+.footer__navbar {
+   width: 100%;
+   padding: 60px 0;
+   display: flex;
+   justify-content: center;
+   gap: 60px;
+}
+
+.navbar__item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.navbar__item a {
+   display: block;
+}
+
+.navbar__item_more {}
+
+.navbar__name {}
+
+.navbar__item_help {}
+
+
+.navbar__item___social {}
+
+.navbar__item___about {}
+
+
+.footer__logo {
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   gap: 15px;
+}
+
+.footer__body {
+   display: grid;
+   grid-template-columns: 1fr 36px 36px 36px 1fr;
+   align-items: center;
+   gap: 30px;
+}
+
+a.social {
+   display: flex;
+   cursor: pointer;
+   transition: 0.8s ease 0s;
+}
+
+.social:hover{
+   transform: scale(1.4);
+}
+
+.social__facebook svg:hover path,
+.social__twitter svg:hover path,
+.social__instagram svg:hover path {
+   fill: #626780;
+}
+
+.navbar__item a:hover {
+color: #626780;
+}
+/* *End FOOTER */
