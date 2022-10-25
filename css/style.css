@@ -212,6 +212,7 @@ form .button {
    background-size: cover;
    background-repeat: no-repeat;
    position: relative;
+   min-height: 100vh;
 }
 
 /* ----------- */
