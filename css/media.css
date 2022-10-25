@@ -1,59 +1,452 @@
+@media (max-width: 1220px) {
 
-/* *FOR ALL */
+   /* *PARTNERS */
+   .partners {
+      background: url(../img/img_partners/fon.png) -55% 100%,
+         radial-gradient(57.2em 57.2em at 0 50%, rgba(255, 237, 239, 1) 49%, transparent -50%),
+         radial-gradient(4.9em 4.9em at 65% 51%, rgba(255, 237, 239, 1) 49%, transparent -50%),
+         radial-gradient(4.9em 4.9em at 49% 97%, rgba(255, 237, 239, 1) 49%, transparent -50%),
+         radial-gradient(2.7em 2.7em at 59% 57%, rgba(255, 237, 239, 1) 49%, transparent -50%),
+         radial-gradient(2.7em 2.7em at 43% 80%, rgba(255, 237, 239, 1) 49%, transparent -50%),
+         radial-gradient(1.5em 1.5em at 50% 66%, rgba(255, 237, 239, 1) 49%, transparent -50%),
+         radial-gradient(1.5em 1.5em at 40% 72%, rgba(255, 237, 239, 1) 49%, transparent -50%);
+      background-repeat: no-repeat;
+   }
 
-/* *End FOR ALL */
-/* *FONT */
+   .partners__offer {
+      margin-bottom: 150px;
+   }
 
-/* *End FONT */
-/* *BUTTON */
+   /* *End PARTNERS */
+}
 
-/* *End BUTTON */
-/* *HEADER */
+@media (max-width: 1025px) {
 
-/* *End HEADER */
-/* *SERVICE */
+   /* *FOR ALL */
+   .info {
+      padding-bottom: 90px;
+   }
 
-/* *End SERVICE */
-/* *EXPERTS */
-
-/* *End Experts */
-/* *DEMO */
-
-/* *End DEMO */
-/* *QUESTIONS */
-
-/* *End QUESTIONS */
-/* *PARTNERS */
-
-/* *End PARTNERS */
-/* *CONTACT */
-
-/* *End CONTACT */
-/* *FOOTER */
-
-/* *End FOOTER */
-
-
-
-
-@media (max-width: 1024px) {
-/* *FOR ALL */
+   .section {
+      padding: 90px 0;
+   }
 
    /* *End FOR ALL */
-   /* *FONT */
-
-   /* *End FONT */
-   /* *BUTTON */
-
-   /* *End BUTTON */
    /* *HEADER */
+   .header__nav::before {
+      margin: 0;
+   }
 
    .nav__menu {
       display: none;
    }
 
-.hidden-menu {
-   display: block;
-}
+   .hidden-menu {
+      display: block;
+   }
+
    /* *End HEADER */
+   /* *SERVICE */
+   .service__container {
+      flex-wrap: wrap;
+   }
+
+   .service__item {
+      min-width: 300px;
+   }
+
+   /* *End SERVICE */
+   /* *QUESTIONS */
+   .questions {
+      background:
+         url(../img/img_questions/image3.png) 150% 20%, radial-gradient(47.2em 47.2em at 85% 28.6em, rgba(245, 245, 255, 0.8) 49%, transparent 50%);
+      background-repeat: no-repeat;
+   }
+
+   /* *End QUESTIONS */
+   /* *PARTNERS */
+   .partners {
+      background: radial-gradient(57.2em 57.2em at 0 50%, rgba(255, 237, 239, 1) 49%, transparent -50%);
+      background-repeat: no-repeat;
+   }
+
+   .partners__offer {
+      margin-bottom: 110px;
+   }
+
+   .partners__review {
+      align-items: center;
+   }
+
+   .partners__review .review__info {
+      width: 100%;
+   }
+
+   /* *End PARTNERS */
+}
+
+@media (max-width: 769px) {
+
+   /* *FOR ALL */
+   body {
+      font-size: 16px;
+   }
+
+   .info {
+      padding-bottom: 70px;
+   }
+
+   .section {
+      padding: 60px 0;
+   }
+
+   /* *End FOR ALL */
+   /* *FONT */
+   .headline {
+      font-size: 2em;
+      width: 100%;
+   }
+
+   .navbar-hidden__name {
+      font-size: 18px;
+   }
+
+   .navbar-hidden__item a {
+      font-size: 14px;
+   }
+
+   .logo {
+      display: none;
+   }
+
+   /* *End FONT */
+   /* *BUTTON */
+   .questions .button {
+      width: 350px;
+      height: 70px;
+   }
+
+   /* *End BUTTON */
+   /* *HEADER */
+   .header {
+      background-position: 0 0;
+
+   }
+
+   .hidden-menu__burger {
+      left: 83vw;
+   }
+
+   /* *End HEADER */
+   /* *SERVICE */
+
+   .service__item {
+      box-shadow: 0 4px 13px rgba(0, 0, 0, 0.4), 0 14px 15px rgba(0, 0, 0, 0.3);
+   }
+
+   .service__item:hover {
+      box-shadow: none;
+      transform: none;
+   }
+
+   /* *End SERVICE */
+   /* *EXPERTS */
+   .experts__body {
+      flex-direction: column;
+      gap: 0;
+   }
+
+   .experts__container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 150px;
+      background: none;
+      justify-content: center;
+      gap: 1em;
+   }
+
+   .experts__info-bloc {
+      height: 210px;
+   }
+
+   .expert__content {
+      justify-content: start;
+   }
+
+   .experts__support {
+      width: 67px;
+      height: 67px;
+      position: static;
+      transform: translate(0, 0);
+      margin: 0 0;
+   }
+
+   .expert__avatar {
+      width: 67px;
+      height: 67px;
+      position: static;
+   }
+
+   .experts__info-bloc {
+      width: 100%;
+   }
+
+   /* *End Experts */
+   /* *QUESTIONS */
+   details {
+      font-size: 14px;
+   }
+
+   .questions__container {
+      display: flex;
+   }
+
+   .question__container_right {
+      display: none;
+   }
+
+   .questions {
+      background:
+         radial-gradient(47.2em 47.2em at 85% 28.6em, rgba(245, 245, 255, 0.8) 49%, transparent 50%);
+      background-repeat: no-repeat;
+   }
+
+   /* *End QUESTIONS */
+   /* *PARTNERS */
+   .offer__container {
+      flex-direction: column;
+      padding: 0;
+   }
+
+   .offer__item {
+      width: 100%;
+      padding: 30px;
+   }
+
+   /* *End PARTNERS */
+   /* *CONTACT */
+   .contact__form {
+      width: 85%;
+      padding: 90px 0 70px;
+      gap: 25px;
+   }
+
+   .form__item {
+      width: 76.5%;
+   }
+
+   /* *End CONTACT */
+   /* *FOOTER */
+   .footer {
+      background: radial-gradient(100em 100em at 50% 50em, rgba(155, 155, 202, 1) 49%, transparent -50%);
+   }
+
+   footer.section {
+      padding: 80px 0 20px;
+   }
+
+   .footer .footer__navbar-hidden {
+      display: flex;
+      gap: 1.8em;
+      padding: 25px 0;
+   }
+
+   .footer .footer__navbar {
+      display: none;
+   }
+
+   .footer__body {
+      gap: 1.8em;
+   }
+
+   /* *End FOOTER */
+}
+
+@media (max-width: 560px) {
+
+   /* *FONT */
+   .navbar-hidden__name {
+      font-size: 16px;
+   }
+
+   .navbar-hidden__item a {
+      font-size: 14px;
+   }
+
+   /* *End FONT */
+   /* * FOOTER */
+   .footer .footer__navbar-hidden {
+      gap: 1.1em;
+      padding: 15px 0;
+   }
+
+   .footer__body {
+      gap: 1.3em;
+      grid-template-columns: 1fr 30px 30px 30px 1fr;
+   }
+
+   .social__facebook svg,
+   .social__twitter svg,
+   .social__instagram svg {
+      width: 30px;
+      height: 30px;
+   }
+
+   /* *End FOOTER */
+}
+
+
+@media (max-width: 426px) {
+
+   /* *FOR ALL */
+   body {
+      font-size: 10px;
+   }
+
+   .info {
+      padding-bottom: 40px;
+   }
+
+   .section {
+      padding: 40px 0;
+   }
+
+   /* *End FOR ALL */
+   /* *FONT */
+   .lead-text {
+      font-size: 1.6em;
+   }
+
+   .service__name {
+      font-size: 1.6em;
+   }
+
+   .text {
+      font-size: 1.4em;
+   }
+
+   .review__slider span {
+      font-size: 1.4em;
+   }
+
+   .expert__content p {
+      font-size: 1.4em;
+   }
+
+   /* *End FONT */
+   /* *BUTTON */
+   .questions .button {
+      width: 250px;
+      height: 45px;
+   }
+
+   .button {
+      font-size: 14px;
+      width: 200px;
+      height: 45px;
+   }
+
+   /* *End BUTTON */
+   /* *HEADER */
+   .hidden-menu__burger {
+      left: 75vw;
+   }
+
+   /* *End HEADER */
+   /* *SERVICE */
+
+   .header .logo__name {
+      display: none;
+   }
+
+   .service__icon {
+      width: 45px;
+      height: 45px;
+   }
+
+   /* *End SERVICE */
+   /* *EXPERTS */
+   .expert__avatar,
+   .experts__support {
+      width: 57px;
+      height: 57px;
+   }
+
+   /* *End Experts */
+   /* *PARTNERS */
+   .review__slider {
+      max-width: auto;
+      width: 100%;
+      padding: 10px 10px;
+   }
+
+   .review__rating {
+      padding: 15px 15px;
+      gap: 10px;
+   }
+
+   .review__rating_icon {
+      width: 40px;
+      height: 40px;
+   }
+
+   /* *End PARTNERS */
+   /* *CONTACT */
+   .contact__form {
+      width: 90%;
+      padding: 60px 0 40px;
+      gap: 15px;
+   }
+
+   .form__item {
+      width: 85.5%;
+   }
+
+   .form__item input {
+      font-size: 14px;
+      color: #9D9D9D;
+      height: 45px;
+      border-radius: 5px;
+      padding: 5px;
+      margin-bottom: 15px;
+   }
+
+   .form__item label {
+      font-size: 13px;
+      top: -20px;
+   }
+
+   .form__item input:hover,
+   .form__item input:focus {
+      font-size: 12px;
+   }
+
+   /* *End CONTACT */
+   /* *FOOTER */
+   .footer .footer__navbar-hidden {
+      flex-direction: column;
+      gap: 0.8em;
+   }
+
+   /* *End FOOTER */
+}
+
+@media (max-width: 376px) {
+   /* *FOR ALL */
+
+   /* *End FOR ALL */
+   /* *SERVICE */
+
+   .header__info {
+      padding: 8.6em 0 5.1em;
+   }
+
+   /* *End SERVICE */
+   /* *PARTNERS */
+   .review__slider .lead-text {
+      font-size: 1.4em;
+   }
+
+   /* *End PARTNERS */
 }
